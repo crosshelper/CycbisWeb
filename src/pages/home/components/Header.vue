@@ -1,31 +1,36 @@
 <template>
   <div>
-  <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-    <el-menu-item index="1">Cycbis</el-menu-item>
-    <el-submenu index="2">
-    <template slot="title">Our company</template>
-      <el-menu-item index="2-1">Team</el-menu-item>
-      <el-menu-item index="2-2">About Us</el-menu-item>
-      <el-menu-item index="2-3">选项3</el-menu-item>
-    </el-submenu>
-    <el-menu-item index="3">Help</el-menu-item>
-  </el-menu>
+    <b-navbar toggleable="lg" type="light" variant="light">
+      <div class="ml-sm-5">
+        <b-img v-bind="mainProps" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisLogo/cb_logo.png" alt="Center image"></b-img>
+      </div>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item href="#">Newcomer</b-nav-item>
+          <b-nav-item href="#">Helper</b-nav-item>
+          <b-nav-item-dropdown text="Our company">
+            <b-dropdown-item href="#">About us</b-dropdown-item>
+            <b-dropdown-item href="#">Investment</b-dropdown-item>
+          </b-nav-item-dropdown>
+        </b-navbar-nav>
+
+        <!-- Right aligned nav items -->
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item href="#" class="mr-sm-5">Sign Up</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'HomeHeader',
-  data () {
-    return {
-      activeIndex: '1',
-      activeIndex2: '1'
-    }
-  },
-  methods: {
-    handleSelect (key, keyPath) {
-      console.log(key, keyPath)
+  data(){
+    return{
+      mainProps: { width: 65, height: 65, class: 'm1' }
     }
   }
 }
