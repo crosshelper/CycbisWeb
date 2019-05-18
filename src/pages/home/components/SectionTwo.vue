@@ -5,9 +5,9 @@
         <h5 class="text-center" type="primary">What we do?</h5>
       </row>
       <!-- Line 1 -->
-      <el-tabs v-model="activeName" @tab-click="handleClick">
+      <el-tabs v-model="activeName" @tab-click="handleClick" class="pb-3">
         <el-tab-pane label="Newcomer" name="first">
-          <div class="row py-lg-5 justify-content-center ">
+          <div class="row pt-lg-5 justify-content-center ">
           <div class="col-md-3 col-lg-3 g-mb-30 my-lg-2 mt-5">
             <div class="text-left g-bg-gray-light-v5 g-py-40 g-px-30">
               <h5 class="text-uppercase g-font-weight-700 g-font-size-11 g-color-black g-mb-20">
