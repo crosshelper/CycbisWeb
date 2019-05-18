@@ -15,8 +15,10 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.20",
+    "element-ui": "^2.8.2",
     "fastclick": "^1.0.6",
     "portal-vue": "^2.1.4",
+    "sass": "^1.20.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.1"
   },
