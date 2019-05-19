@@ -22,11 +22,12 @@ npm run unit
 
 # run all tests
 npm test
+
+# Git 使用
+git add .
+git commit -m 'project init'
+git push
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-### Git
-1. git add .
-2. git commit -m 'project init'
-3. git push
