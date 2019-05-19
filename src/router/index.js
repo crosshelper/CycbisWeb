@@ -4,6 +4,7 @@ import Home from '@/pages/home/Home'
 import GetStart from '@/pages/getStart/GetStart'
 import Signup from '@/pages/newcomer-signup/Signup'
 import NewcomerSignupStepTwo from '@/pages/newcomer-signup-next/NewcomerSignupNext'
+import NewcomerSignupCongra from '@/pages/newcomer-signup-congra/SignupCongra'
 
 Vue.use(Router)
 
@@ -27,5 +28,10 @@ export default new Router({
       path: '/newcomer-signup-next',
       name: 'newcomer-signup-next',
       component: NewcomerSignupStepTwo
+    },
+    {
+      path: '/newcomer-signup-congra',
+      name: 'newcomer-signup-congra',
+      component: NewcomerSignupCongra
     }]
 })

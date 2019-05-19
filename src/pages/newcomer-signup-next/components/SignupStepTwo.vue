@@ -1,5 +1,16 @@
 <template>
   <section class="pb-5">
+    <div class="row justify-content-between">
+      <div class="col-3 ml-5 mt-2">
+          <router-link to="/">
+            <b-img v-bind="mainProps" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisLogo/cb_logo.png" alt="Center image"></b-img>
+          </router-link>
+      </div>
+      <div class="col-3 text-right  mr-5 mt-2">
+        <el-button type="text">Or become a helper</el-button>
+      </div>
+    </div>
+
     <div class="row justify-content-center">
       <div class="col-lg-4 my-5">
         <div class="card">
@@ -24,7 +35,7 @@
               <div>
                 <p text-muted style="font-size: x-small">Phone number or email address is option but highly recommend</p>
               </div>
-              <router-link to="/newcomer-signup-next">
+              <router-link to="/newcomer-signup-congra">
                 <el-button type="primary" style="width: 100%" class="mt-2">Done</el-button>
               </router-link>
             </form>
@@ -41,6 +52,7 @@ export default {
   components: {ElButton},
   data () {
     return {
+      mainProps: { width: 65, height: 65, class: 'm1' },
       name: "signup-step-two"
     }
   }

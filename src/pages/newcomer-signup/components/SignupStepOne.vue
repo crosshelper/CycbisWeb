@@ -1,5 +1,15 @@
 <template>
     <section class="pb-5">
+      <div class="row justify-content-between">
+        <div class="col-3 ml-5 mt-2">
+          <router-link to="/">
+            <b-img v-bind="mainProps" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisLogo/cb_logo.png" alt="Center image"></b-img>
+          </router-link>
+        </div>
+        <div class="col-3 text-right  mr-5 mt-2">
+          <el-button type="text">Or become a helper</el-button>
+        </div>
+      </div>
       <div class="row justify-content-center">
         <div class="col-lg-4 my-5">
           <div class="card">
@@ -57,6 +67,7 @@ export default {
   name: 'SignupStepOne',
   data () {
     return {
+      mainProps: { width: 65, height: 65, class: 'm1' },
       userIDInput: '',
       passwardInput: '',
       CpasswardInput: ''
