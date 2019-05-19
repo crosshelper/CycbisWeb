@@ -34,8 +34,10 @@
           <h6 class="text-left">Download App</h6>
           <div class="col-12 text-center">
             <div class="row">
-              <div class=" justify-content-center"><a class="text-dark" href="#"><img class="img-fluid float-right mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/Download_on_the_App_Store.png" alt="" width="100"><p class="mr-3">Apple store</p></a></div>
-              <div class=" justify-content-center"><a class="text-dark" href="#"><img class="img-fluid float-left mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/google_Store_Badge.png" alt="" width="105"><p class="mr-3">Google play</p></a></div>
+              <div class=" justify-content-center"><a class="text-dark" href="#"><img class="img-fluid float-right mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/Download_on_the_App_Store.png" alt="" width="100">
+                <p class="mr-3">Apple store</p></a></div>
+              <div class="justify-content-center"><a class="text-dark" href="#"><img class="img-fluid float-left mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/google_Store_Badge.png" alt="" width="105">
+                <p class="mr-3">Google play</p></a></div>
             </div>
           </div>
         </div>
@@ -63,16 +65,16 @@
 </template>
 
 <script>
-export default {
-  name: 'footer'
-}
+    export default {
+        name: "get-start-footer"
+    }
 </script>
 
 <style scoped>
-li{
-  list-style-type:none;
-}
-section{
-  background: #F4F4F4;
-}
+  li{
+    list-style-type:none;
+  }
+  section{
+    background: #F4F4F4;
+  }
 </style>

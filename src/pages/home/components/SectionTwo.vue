@@ -90,15 +90,14 @@
 </template>
 
 <script>
-import ElMain from "element-ui/packages/main/src/main";
-
+import ElMain from 'element-ui/packages/main/src/main'
 export default {
   components: {ElMain},
-  name: "section-two",
-  data() {
+  name: 'section-two',
+  data () {
     return {
       activeName: 'first'
-    };
+    }
   }
 }
 </script>

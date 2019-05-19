@@ -1,20 +1,31 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home/Home'
-import Signup from '@/pages/signup/Signup'
+import GetStart from '@/pages/getStart/GetStart'
+import Signup from '@/pages/newcomer-signup/Signup'
+import NewcomerSignupStepTwo from '@/pages/newcomer-signup-next/NewcomerSignupNext'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'Home',
       component: Home
-    }, {
-      path: '/signup',
-      name: 'List',
+    },
+    {
+      path: '/getStart',
+      name: 'get-start',
+      component: GetStart
+    },
+    {
+      path: '/newcomer-signup',
+      name: 'newcomer-signup',
       component: Signup
-    }
-  ]
+    },
+    {
+      path: '/newcomer-signup-next',
+      name: 'newcomer-signup-next',
+      component: NewcomerSignupStepTwo
+    }]
 })
