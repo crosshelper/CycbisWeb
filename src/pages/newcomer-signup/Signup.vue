@@ -6,10 +6,11 @@
 
 <script>
 import SignupStepOne from './components/SignupStepOne'
+
     export default {
         name: "newcomersignup",
       components: {
-        SignupStepOne,
+        SignupStepOne
       }
     }
 </script>

@@ -6,6 +6,7 @@
 
 <script>
   import SignupTwo from './components/SignupStepTwo'
+
     export default {
         name: "newcomer-signup-next",
       components: {

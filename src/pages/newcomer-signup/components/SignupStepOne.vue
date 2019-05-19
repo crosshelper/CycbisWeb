@@ -1,8 +1,5 @@
 <template>
     <section class="pb-5">
-      <div class="pt-5 text-center">
-        <b-img v-bind="mainProps" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisLogo/cb_logo.png" alt="Center image"></b-img>
-      </div>
       <div class="row justify-content-center">
         <div class="col-lg-4 my-5">
           <div class="card">
@@ -60,7 +57,6 @@ export default {
   name: 'SignupStepOne',
   data () {
     return {
-      mainProps: { width: 85, height: 85, class: 'm1' },
       userIDInput: '',
       passwardInput: '',
       CpasswardInput: ''

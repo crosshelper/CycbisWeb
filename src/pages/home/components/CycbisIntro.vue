@@ -13,9 +13,9 @@
               <br>(That is based on your location & language & background.)
             </p>
             <div>
-              <el-row class="mb-4 mt-5">
-                <el-col :span="8" :offset="8">
-                  <el-button type="primary" >Get Start</el-button>
+              <el-row class="mt-2">
+                <el-col :span="18" :offset="8">
+                  <el-button type="primary" round>Get Start</el-button>
                 </el-col>
               </el-row>
             </div>
