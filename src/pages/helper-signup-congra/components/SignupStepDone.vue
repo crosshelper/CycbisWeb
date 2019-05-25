@@ -15,7 +15,7 @@
       <div class="container">
         <div class="row">
           <div class="col-8 g-line-height-1_3 g-mb-20">
-            <h1 class="g-font-size-20">Congratulations! Your are ready to start. Let's download the app.</h1>
+            <h1 class="g-font-size-20">Congratulations! You can helper other now. Let's download the helper app.</h1>
             <div class="row ml-1">
               <div class=""><a class="text-dark" href="#"><img class="img-fluid float-right mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/Download_on_the_App_Store.png" alt="" width="150"><p class="mr-3">Apple store</p></a></div>
               <div class=""><a class="text-dark" href="#"><img class="img-fluid float-left mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/google_Store_Badge.png" alt="" width="155"><p class="mr-3">Google play</p></a></div>
@@ -25,7 +25,7 @@
         <div class="row my-3 ml-1">
           <p>Or you can click the</p>
           <router-link class="router-link-active" to="/">
-            <a>&nbsp;helping instruction</a>
+            <a>&nbsp;helper instruction</a>
           </router-link>
           <p>&nbsp;here.</p>
         </div>
@@ -37,7 +37,7 @@
 
 <script>
     export default {
-      name: "signup-step-done",
+        name: "signup-step-done",
       data () {
         return {
           mainProps: { width: 65, height: 65, class: 'm1' },
@@ -48,14 +48,14 @@
 </script>
 
 <style scoped>
-.congraMT{
-  margin-top: 10%;
-}
-.simple{
-  position: relative;
-  bottom: 15px;
-}
-.router-link-active {
-  color: #FF4E18;
-}
+  .congraMT{
+    margin-top: 10%;
+  }
+  .simple{
+    position: relative;
+    bottom: 15px;
+  }
+  .router-link-active {
+    color: #FF4E18;
+  }
 </style>

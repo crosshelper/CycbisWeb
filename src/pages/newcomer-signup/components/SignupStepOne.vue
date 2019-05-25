@@ -7,14 +7,16 @@
           </router-link>
         </div>
         <div class="col-3 text-right  mr-5 mt-2">
-          <el-button type="text">Or become a helper</el-button>
+          <router-link to="/helper-signup">
+            <el-button type="text">Or become a helper</el-button>
+          </router-link>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-4 my-5">
           <div class="card">
             <div class="card-body">
-              <h3 class="text-center" >Sign up</h3>
+              <h3 class="text-center" >Sign up to get help</h3>
               <div class="py-3 px-2">
                 <span class="text-secondary">Find lovable local</span><br>
                 <span class="text-secondary">to help you solve problem</span>

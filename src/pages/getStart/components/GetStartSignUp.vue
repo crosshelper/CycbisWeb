@@ -3,7 +3,7 @@
     <div class="row mb-4" id="signup">
       <div class="col-lg mt-5" id="right">
         <div class="col-10 ">
-          <router-link to="">
+          <router-link to="/helper-signup">
             <h2 class="text-dark"><u>Become a helper</u></h2>
           </router-link>
             <p class="">Earn money up tp $1400 each week. Become a helper to help newcomers.</p>
