@@ -16,61 +16,97 @@
         <div class="card">
           <div class="card-body">
             <h6 class="text-center" >Almost finish</h6>
-            <form class="px-2">
-              <div class="row px-4">
-                <div class="dropdown-divider col-5"></div>
-                <p class="text-muted col-2 text-center" style="font-size: xx-small">OR</p>
-                <div class="dropdown-divider col-5 ml-auto"></div>
-              </div>
-              <div class="form-group mb-2">
-                <el-input v-model="userIDInput" placeholder="What is your name?"></el-input>
-              </div>
-              <div class="dropdown-divider col-12 my-3"></div>
-              <div class="form-group mb-2">
-                <el-input placeholder="Phone number" v-model="passwardInput" show-password></el-input>
-              </div>
-              <div class="form-group mb-2">
-                <el-input placeholder="Email address" v-model="CpasswardInput" show-password></el-input>
-              </div>
+
+
+            <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm px-2">
+
+              <el-form-item prop="UName">
+                <el-input v-model="ruleForm.UName" placeholder="Enter your Name"></el-input>
+              </el-form-item>
+              <div class="dropdown-divider col-12 mb-4"></div>
+              <el-form-item>
+                <el-input v-model="ruleForm.PhoneNum" placeholder="Email phone number"></el-input>
+              </el-form-item>
+              <el-form-item>
+                <el-input v-model="ruleForm.EmailAddress" placeholder="Email address"></el-input>
+              </el-form-item>
               <div>
-                <p text-muted style="font-size: x-small">Phone number or email address is option but highly recommend</p>
+                <p text-muted style="font-size: x-small">Phone number or email address is option but highly recommend.</p>
               </div>
-              <router-link to="/newcomer-signup-congra">
-                <el-button type="primary" style="width: 100%" class="mt-2">Done</el-button>
-              </router-link>
-            </form>
+              <el-form-item>
+                 <router-link to="/newcomer-signup-congra">
+                   <el-button type="primary" style="width: 100%" @click="submitForm('ruleForm')">Done</el-button>
+                 </router-link>
+                </el-form-item>
+
+              </el-form>
+
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</template>
+    </section>
+  </template>
 
-<script>
-import ElButton from "element-ui/packages/button/src/button";
-export default {
-  components: {ElButton},
-  data () {
-    return {
-      mainProps: { width: 65, height: 65, class: 'm1' },
-      name: "signup-step-two"
+  <script>
+  import ElButton from "element-ui/packages/button/src/button";
+  export default {
+    components: {ElButton},
+    name: "signup-step-two",
+    data () {
+      var checkName = (rule, value, callback) => {
+        if (value  === '') {
+          callback(new Error('Enter a Email Address'));
+        }
+        else {
+          callback();
+        }
+      };
+      return {
+        ruleForm: {
+          UName: '',
+          PhoneNum:'',
+          EmailAddress:''
+        },
+        rules: {
+          UName: [
+            {validator: checkName, trigger: 'blur'}
+          ],
+        },
+        mainProps: { width: 65, height: 65, class: 'm1' },
+        UnameInput: '',
+        PhoneNumInput: '',
+        EmailAddressInput: '',
+      };
+    },
+    methods: {
+      submitForm(formName) {
+        this.$refs[formName].validate((valid) => {
+          if (valid) {
+            alert('submit!');
+          } else {
+            console.log('error submit!!');
+            return false;
+          }
+        });
+      }
     }
   }
-}
-</script>
+  </script>
 
-<style scoped>
-  .simple{
-    position: relative;
-    bottom: 15px;
-  }
-  p{
-    color: #6C757D;
-  }
-  h6{
-    color: #FF4E18;
-  }
-  Section{
-    height: 100%;
-  }
-</style>
+  <style scoped>
+    .simple{
+      position: relative;
+      bottom: 15px;
+    }
+    p{
+      color: #6C757D;
+    }
+    h6{
+      color: #FF4E18;
+    }
+    Section{
+      height: 100%;
+    }
+  </style>

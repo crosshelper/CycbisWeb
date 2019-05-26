@@ -12,86 +12,135 @@
         </router-link>
       </div>
     </div>
-
     <div class="row justify-content-center">
       <div class="col-lg-4 my-5">
         <div class="card">
           <div class="card-body">
             <h6 class="text-center" >Almost finish</h6>
-            <form class="px-2 pt-2">
-              <div class="form-group mb-2">
-                <el-input v-model="userIDInput" placeholder="What is your name?"></el-input>
+            <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm px-2" >
+
+              <el-form-item prop="Uname">
+                <el-input v-model="ruleForm.Uname" placeholder="Enter your Name"></el-input>
+              </el-form-item>
+              <el-form-item prop="PhoneNum">
+                <el-input v-model="ruleForm.PhoneNum" placeholder="Email phone number"></el-input>
+              </el-form-item>
+              <el-form-item prop="EmailAddress">
+                <el-input v-model="ruleForm.EmailAddress" placeholder="Email address"></el-input>
+              </el-form-item>
+              <div class="dropdown-divider col-12 mb-4"></div>
+              <el-form-item prop="StreetAddress">
+                <el-input v-model="ruleForm.StreetAddress" placeholder="Street address"></el-input>
+              </el-form-item>
+                <el-form-item prop="AdditionAddress">
+                  <el-input v-model="ruleForm.AdditionAddress" placeholder="Unit, apartment, studio of floor (option)"></el-input>
+                </el-form-item>
+              <div class="row no-gutters">
+                <el-form-item class="col-md-4 ItemGutters" prop="City">
+                  <el-input v-model="ruleForm.City" placeholder="City"></el-input>
+                </el-form-item>
+                <el-form-item class="col-md-3 ItemGutters" prop="State">
+                  <el-input v-model="ruleForm.State" placeholder="State"></el-input>
+                </el-form-item>
+                <el-form-item class="col-md-4 ItemGutters" prop="ZipCode">
+                  <el-input v-model="ruleForm.ZipCode" placeholder="Zip Code"></el-input>
+                </el-form-item>
               </div>
-              <div class="form-group mb-2">
-                <el-input placeholder="Phone number" v-model="passwardInput" show-password></el-input>
-              </div>
-              <div class="form-group mb-2">
-                <el-input placeholder="Email address" v-model="CpasswardInput" show-password></el-input>
-              </div>
-              <div class="dropdown-divider col-12 my-3"></div>
-              <div class="form-group mb-2">
-                <el-input v-model="userPLanguage" placeholder="Enter priority language?"></el-input>
-              </div>
-              <div class="form-group mb-2">
-                <el-input v-model="userSLanguage" placeholder="Enter second language if available"></el-input>
-              </div>
-              <div class="dropdown-divider col-12 my-3"></div>
-              <div class="form-group mb-2">
-                <el-input placeholder="Street address" v-model="CpasswardInput" show-password></el-input>
-              </div>
-              <div class="row">
-                <div class="col-6 form-group mb-2">
-                  <el-input placeholder="Unit" v-model="CpasswardInput" show-password></el-input>
-                </div>
-                <div class="col-6 form-group mb-2">
-                  <el-input placeholder="City" v-model="CpasswardInput" show-password></el-input>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6 form-group mb-2">
-                  <el-input placeholder="State" v-model="CpasswardInput" show-password></el-input>
-                </div>
-                <div class="col-6 form-group mb-2">
-                  <el-input placeholder="Zip code" v-model="CpasswardInput" show-password></el-input>
-                </div>
-              </div>
-              <router-link to="/helper-signup-verify">
-                <el-button type="primary" style="width: 100%" class="mt-2">Next</el-button>
-              </router-link>
-            </form>
+              <el-form-item>
+               <router-link to="/helper-signup-verify">
+                  <el-button type="primary" style="width: 100%" class="mt-2" @click="submitForm('ruleForm')">Next</el-button>
+               </router-link>
+                </el-form-item>
+              </el-form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</template>
+    </section>
+  </template>
 
-<script>
-  import ElButton from "element-ui/packages/button/src/button";
-    export default {
-      components: {ElButton},
-        name: "signup-step-two",
-      data () {
-        return {
-          mainProps: { width: 65, height: 65, class: 'm1' },
-          name: "signup-step-two"
+  <script>
+    import ElButton from "element-ui/packages/button/src/button";
+      export default {
+        components: {ElButton},
+          name: "signup-step-two",
+        data () {
+          return {
+            ruleForm: {
+              Uname: '',
+              PhoneNum:'',
+              EmailAddress:'',
+              StreetAddress:'',
+              AdditionAddress:'',
+              City:'',
+              State:'',
+              ZipCode:''
+            },
+            rules: {
+              Uname: [
+                { required: true, message:'Please enter your real name', trigger: 'blur'},
+                { min: 3, max: 30, message: 'More than 3 character', trigger: 'blur' }
+              ],
+              PhoneNum: [
+                { required: true, message:'Please enter your phone number', trigger: 'blur'},
+                { min: 10, max: 16, message: 'Please enter a valid phone number', trigger: 'blur' }
+              ],
+              EmailAddress: [
+                { required: true, message:'Please enter your email address', trigger: 'blur'}
+              ],
+              StreetAddress: [
+                { required: true, message:'Please enter Street address', trigger: 'blur'}
+              ],
+              //AdditionAddress: [
+                //{ required: true, message:'Enter your real name', trigger: 'blur'},
+                //{ min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+              //],
+              City: [
+                { required: true, message:'Enter City', trigger: 'blur'}
+              ],
+              State: [
+                { required: true, message:'Enter State', trigger: 'blur'}
+              ],
+              ZipCode: [
+                { required: true, message:'Enter zip code', trigger: 'blur'},
+                { min: 5, max: 11, message: 'Enter valid zip code', trigger: 'blur' }
+              ],
+            },
+            mainProps: { width: 65, height: 65, class: 'm1' },
+            name: "signup-step-two",
+          };
+        },
+        methods: {
+          submitForm(formName) {
+            this.$refs[formName].validate((valid) => {
+              if (valid) {
+                alert('submit!');
+              } else {
+                console.log('error submit!!');
+                return false;
+              }
+            });
+          }
         }
       }
-    }
-</script>
+  </script>
 
-<style scoped>
-  .simple{
-    position: relative;
-    bottom: 15px;
-  }
-  p{
-    color: #6C757D;
-  }
-  h6{
-    color: #FF4E18;
-  }
-  Section{
-    height: 100%;
-  }
-</style>
+  <style scoped>
+    .simple{
+      position: relative;
+      bottom: 15px;
+    }
+    p{
+      color: #6C757D;
+    }
+    h6{
+      color: #FF4E18;
+    }
+    Section{
+      height: 100%;
+    }
+    .ItemGutters{
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  </style>

@@ -18,64 +18,89 @@
         <div class="card">
           <div class="card-body">
             <h6 class="text-center" >Almost finish</h6>
-            <form class="px-2">
+            <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm px-2" >
               <div class="dropdown-divider col-12 my-3"></div>
               <div>
                 <p text-muted style="font-size: small">Upload Your photo ID</p>
               </div>
-                <b-form-file
-                  v-model="file"
-                  :state="Boolean(file)"
-                  placeholder="Choose a file..."
-                  drop-placeholder="Drop file here...">
-                </b-form-file>
-                <p class="mt-3" style="font-size: small" text-muted>Selected file: {{ file ? file.name : '' }}</p>
+
+              <template>
+                <div>
+                  <b-form-file v-model="file" ref="file-input" class="mb-2"></b-form-file>
+                  <el-button style="width: 100%" @click="file = null">Reset</el-button>
+                  <p class="mt-2">Selected file: <span>{{ file ? file.name : '' }}</span></p>
+                </div>
+              </template>
+
               <div class="dropdown-divider col-12 my-3"></div>
-              <div class="form-group mb-2">
-                <el-input v-model="userSLanguage" placeholder="Enter SSN"></el-input>
-              </div>
+
+              <el-form-item prop="SSN">
+                <el-input v-model="ruleForm.SSN" placeholder="Enter your SSN"></el-input>
+              </el-form-item>
+
               <div>
                 <p text-muted style="font-size: x-small">Enter SSN for background check and Tax. We will not use your SSN to do any other purposes.</p>
               </div>
-              <router-link to="/helper-signup-congra">
-                <el-button type="primary" style="width: 100%" class="mt-2">Done</el-button>
-              </router-link>
-            </form>
+
+             <router-link to="/helper-signup-congra">
+                <el-button type="primary" style="width: 100%" class="mt-2" @click="submitForm('ruleForm')">Done</el-button>
+             </router-link>
+              </el-form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</template>
+    </section>
+  </template>
 
-<script>
-  import ElButton from "element-ui/packages/button/src/button";
-    export default {
-        name: "signup-step-three",
-      components: {ElButton},
-      data () {
-        return {
-          mainProps: { width: 65, height: 65, class: 'm1' },
-          name: "signup-step-two",
-          file: null,
-          file2: null
+  <script>
+    import ElButton from "element-ui/packages/button/src/button";
+      export default {
+          name: "signup-step-three",
+        components: {ElButton},
+        data () {
+          return {
+            mainProps: { width: 65, height: 65, class: 'm1' },
+            name: "signup-step-two",
+            file: null,
+            ruleForm: {
+              SSN: ''
+            },
+            rules: {
+              SSN: [
+                { required: true, message:'Please enter your SSN', trigger: 'blur'},
+                { min: 9, max: 9, message: 'Please enter a valid SSN', trigger: 'blur' }
+              ]
+            }
+          }
+        },
+        methods: {
+          submitForm(formName) {
+            this.$refs[formName].validate((valid) => {
+              if (valid) {
+                alert('submit!');
+              } else {
+                console.log('error submit!!');
+                return false;
+              }
+            });
+          },
         }
       }
-    }
-</script>
+  </script>
 
-<style scoped>
-  .simple{
-    position: relative;
-    bottom: 15px;
-  }
-  p{
-    color: #6C757D;
-  }
-  h6{
-    color: #FF4E18;
-  }
-  Section{
-    height: 100%;
-  }
-</style>
+  <style scoped>
+    .simple{
+      position: relative;
+      bottom: 15px;
+    }
+    p{
+      color: #6C757D;
+    }
+    h6{
+      color: #FF4E18;
+    }
+    Section{
+      height: 100%;
+    }
+  </style>

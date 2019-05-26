@@ -21,7 +21,7 @@
                 <span class="text-secondary">Helper others</span><br>
               <span class="text-secondary">Make up to $2400 per week</span>
             </div>
-            <form class="px-2">
+            <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm">
               <div>
                 <div class="text-center pb-1">
                   <el-button size="mini" style="width: 100%">
@@ -41,19 +41,24 @@
                 <p class="text-muted col-2 text-center" style="font-size: xx-small">OR</p>
                 <div class="dropdown-divider col-5 ml-auto"></div>
               </div>
-              <div class="form-group mb-2">
-                <el-input v-model="userIDInput" placeholder="Enter User ID"></el-input>
-              </div>
-              <div class="form-group mb-2">
-                <el-input placeholder="Enter passward" v-model="passwardInput" show-password></el-input>
-              </div>
-              <div class="form-group mb-2">
-                <el-input placeholder="Comfirm passward" v-model="CpasswardInput" show-password></el-input>
-              </div>
-              <router-link to="/helper-signup-next">
-                <el-button type="primary" style="width: 100%" class="mt-2">Next</el-button>
-              </router-link>
-            </form>
+
+              <el-form-item prop="UserID">
+                <el-input v-model="ruleForm.UserID" placeholder="User ID"></el-input>
+              </el-form-item>
+              <el-form-item  prop="pass">
+                <el-input type="password" v-model="ruleForm.pass" placeholder="Password" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item prop="checkPass">
+                <el-input type="password" v-model="ruleForm.checkPass" placeholder="Confirm password" autocomplete="off"></el-input>
+              </el-form-item>
+
+              <el-form-item>
+                <router-link to="/helper-signup-next">
+                  <el-button type="primary" @click="submitForm('ruleForm')" style="width: 100%" class="mt-2">Next</el-button>
+                </router-link>
+              </el-form-item>
+            </el-form>
+
           </div>
         </div>
       </div>
@@ -67,12 +72,68 @@
       components: {ElButton},
         name: "signup-step-one",
       data () {
+        var checkUserID = (rule, value, callback) => {
+          if (value === '') {
+            return callback(new Error('Enter a Email Address'));
+          }
+          else {
+            callback();
+          }
+        };
+
+        var validatePass = (rule, value, callback) => {
+          if (value === '') {
+            callback(new Error('Enter a password'));
+          } else {
+            if (this.ruleForm.checkPass !== '') {
+              this.$refs.ruleForm.validateField('checkPass');
+            }
+            callback();
+          }
+        };
+        var validatePass2 = (rule, value, callback) => {
+          if (value === '') {
+            callback(new Error('Confirm the password'));
+          } else if (value !== this.ruleForm.pass) {
+            callback(new Error('Those password did not match! Try agian!'));
+          } else {
+            callback();
+          }
+        };
         return {
           mainProps: {width: 65, height: 65, class: 'm1'},
           userIDInput: '',
           passwardInput: '',
-          CpasswardInput: ''
-        }
+          CpasswardInput: '',
+          ruleForm: {
+            UserID: '',
+            pass: '',
+            checkPass: ''
+          },
+          rules: {
+            pass: [
+              {validator: validatePass, trigger: 'blur'}
+            ],
+            checkPass: [
+              {validator: validatePass2, trigger: 'blur'}
+            ],
+            UserID: [
+              {validator: checkUserID, trigger: 'blur'}
+            ]
+          }
+      };
+        },
+          methods: {
+          submitForm(formName) {
+            this.$refs[formName].validate((valid) => {
+              if (valid) {
+                alert('submit!');
+              } else {
+                console.log('error submit!!');
+                return false;
+              }
+            });
+          }
       }
     }
 </script>
