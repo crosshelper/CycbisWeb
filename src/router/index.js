@@ -9,6 +9,11 @@ import HelperSignup from '@/pages/helper-signup/HelperSignup'
 import HelperSignupStepTwo from '@/pages/helper-signup-next/HelperSignupNext'
 import HelperSignupStepThree from '@/pages/helper-signup-verify/HelperSignupVerify'
 import HelperSignupCongra from '@/pages/helper-signup-congra/HelperSignupCongra'
+import NewcomerIntro from '@/pages/newcomer-intro/NewcomerIntro'
+import HelperIntro from '@/pages/helper-intro/HelperIntro'
+import Support from '@/pages/support/Support'
+import Company from '@/pages/company/Company'
+
 
 Vue.use(Router)
 
@@ -57,5 +62,25 @@ export default new Router({
       path: '/helper-signup-congra',
       name: 'helper-signup-congra',
       component: HelperSignupCongra
+    },
+    {
+      path: '/newcomer-intro',
+      name: 'newcomer-intro',
+      component: NewcomerIntro
+    },
+    {
+      path: '/helper-intro',
+      name: 'helper-intro',
+      component: HelperIntro
+    },
+    {
+      path: '/support',
+      name: 'support',
+      component: Support
+    },
+    {
+      path: '/company',
+      name: 'company',
+      component: Company
     }]
 })
