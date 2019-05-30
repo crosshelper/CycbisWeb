@@ -11,7 +11,7 @@ import HelperSignupStepThree from '@/pages/helper-signup-verify/HelperSignupVeri
 import HelperSignupCongra from '@/pages/helper-signup-congra/HelperSignupCongra'
 import NewcomerIntro from '@/pages/newcomer-intro/NewcomerIntro'
 import HelperIntro from '@/pages/helper-intro/HelperIntro'
-import Support from '@/pages/support/Support'
+import Learn from '@/pages/learn/Learn'
 import Company from '@/pages/company/Company'
 
 
@@ -74,9 +74,9 @@ export default new Router({
       component: HelperIntro
     },
     {
-      path: '/support',
-      name: 'support',
-      component: Support
+      path: '/learn',
+      name: 'learn',
+      component: Learn
     },
     {
       path: '/company',

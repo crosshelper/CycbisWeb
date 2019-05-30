@@ -1,31 +1,13 @@
 <template>
-    <section>
-      <div>
-        <el-image :src="src">
-          <div class="row py-md-5">
-            <h5 class="col-3">About us</h5>
-            <h5 class="col-3">Career</h5>
-            <h5 class="col-3">Business</h5>
-            <h5 class="col-3">Investment</h5>
-          </div>
-        </el-image>
-      </div>
-      <div class=" justify-content-center">
-        <div class="row py-md-5">
-          <router-link to="/helper-intro" class="col-md-3 text-center">
-            <h5>About us</h5>
-          </router-link>
-          <router-link to="/helper-intro" class="col-md-3 text-center">
-          <h5 >Career</h5>
-          </router-link>
-          <router-link to="/helper-intro" class="col-md-3 text-center">
-          <h5>Business</h5>
-          </router-link>
-          <router-link to="/helper-intro" class="col-md-3 text-center">
-          <h5>Investment</h5>
-          </router-link>
+    <section class="pb-md-5">
+      <div class="row text-center justify-content-center px-2">
+        <div class="col-md-8 text-center my-md-3">
+          <h3 class="text-center mt-md-5">Our mission is making life & traveling easier for the newcomer.</h3>
+          <p>Cycbis is a platfrom that connect local residents and newcomers to offer instant help. All newcomers are facing various kinds of problems when they first come to a new country, especially during the first 1-2 years. We help newcomer find the nearest right person to solve your problem immediately.
+            <br/>(That is based on your location & language & background.)</p>
         </div>
       </div>
+
     </section>
 </template>
 
@@ -34,7 +16,7 @@
         name: "section",
       data() {
         return {
-          src: 'https://s3-us-west-1.amazonaws.com/image.cycbis.com/Test/14970.jpg'
+          src: ''
         }
       }
     }
@@ -42,7 +24,10 @@
 </script>
 
 <style scoped>
-h5{
-  color: #4e555b;
+h3{
+  color: #555555;
+}
+p{
+  color: #555555;
 }
 </style>

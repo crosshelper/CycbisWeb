@@ -25,8 +25,8 @@
             </router-link>
           </b-nav-item>
           <b-nav-item href="#">
-            <router-link to="/support">
-              <div class="text-dark">Support</div>
+            <router-link to="/learn">
+              <div class="text-dark">Learn</div>
             </router-link>
           </b-nav-item>
         </b-navbar-nav>
@@ -38,7 +38,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <hr class="simple " color="#DCDFE6" />
+    <hr class="simple" color="#DCDFE6" />
   </section>
 </template>
 

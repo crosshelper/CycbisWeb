@@ -13,7 +13,7 @@
           <b-nav-item href="#" class="text-primary"><div class="text-dark">Newcomer</div></b-nav-item>
           <b-nav-item href="#"><div class="text-dark">Helper</div></b-nav-item>
           <b-nav-item href="#"><div class="text-dark">Company</div></b-nav-item>
-          <b-nav-item href="#"><div class="text-dark">Support</div></b-nav-item>
+          <b-nav-item href="#"><div class="text-dark">Learn</div></b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->

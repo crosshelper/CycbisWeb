@@ -3,9 +3,9 @@
     <div class="container mt-5" >
       <div class="row">
         <div class="col-md-2 col-12 ">
-          <h6 class="text-left">Company</h6>
+          <h6 class="text-left">About us</h6>
           <ul class="p-0">
-            <li class="list text-left"><a class="text-dark" href="#">About us</a></li>
+            <li class="list text-left"><a class="text-dark" href="#">Company</a></li>
             <li class="list text-left"><a class="text-dark" href="#">Career</a></li>
             <li class="list text-left"><a class="text-dark" href="#">Business</a></li>
             <li class="list text-left"><a class="text-dark" href="#">Investment</a></li>
