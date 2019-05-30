@@ -1,7 +1,7 @@
 <template>
   <section class="py-5 bgColor">
     <div class="row justify-content-center">
-      <h2>Or learn more about us.</h2>
+      <h2 class="text-center col-8">Or learn more about us.</h2>
     </div>
     <br>
     <div class="container text-center">
