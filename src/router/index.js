@@ -14,6 +14,8 @@ import HelperIntro from '@/pages/helper-intro/HelperIntro'
 import Learn from '@/pages/learn/Learn'
 import Company from '@/pages/company/Company'
 import Career from '@/pages/career/Career'
+import Business from '@/pages/business/Business'
+import Investment from '@/pages/investment/Investment'
 
 
 Vue.use(Router)
@@ -88,5 +90,15 @@ export default new Router({
       path: '/career',
       name: 'career',
       component: Career
+    },
+    {
+      path: '/business',
+      name: 'business',
+      component: Business
+    },
+    {
+      path: '/investment',
+      name: 'investment',
+      component: Investment
     }]
 })

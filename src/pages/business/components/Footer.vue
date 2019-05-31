@@ -13,11 +13,7 @@
                 <a class="text-dark" href="#">Career</a>
               </router-link>
             </li>
-            <li class="list text-left">
-              <router-link to="/business">
-                <a class="text-dark" href="#">Business</a>
-              </router-link>
-            </li>
+            <li class="list text-left"><a class="text-dark" href="#">Business</a></li>
             <li class="list text-left"><a class="text-dark" href="#">Investment</a></li>
           </ul>
         </div>
@@ -73,11 +69,8 @@
 </template>
 
 <script>
-    import Business from "../../business/Business";
-
     export default {
-      components: {Business},
-      name: "footer"
+        name: "footer"
     }
 </script>
 

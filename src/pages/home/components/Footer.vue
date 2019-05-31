@@ -8,7 +8,11 @@
             <li class="list text-left"><a class="text-dark" href="#">About us</a></li>
             <li class="list text-left"><a class="text-dark" href="#">Career</a></li>
             <li class="list text-left"><a class="text-dark" href="#">Business</a></li>
-            <li class="list text-left"><a class="text-dark" href="#">Investment</a></li>
+            <li class="list text-left">
+              <router-link to="/investment">
+                <a class="text-dark" href="#">Investment</a>
+              </router-link>
+            </li>
           </ul>
         </div>
         <div class="col-md-2 col-12 ">
