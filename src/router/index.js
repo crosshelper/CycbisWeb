@@ -16,6 +16,7 @@ import Company from '@/pages/company/Company'
 import Career from '@/pages/career/Career'
 import Business from '@/pages/business/Business'
 import Investment from '@/pages/investment/Investment'
+import Privacy from '@/pages/privacy/Privacy'
 
 
 Vue.use(Router)
@@ -100,5 +101,10 @@ export default new Router({
       path: '/investment',
       name: 'investment',
       component: Investment
+    },
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: Privacy
     }]
 })

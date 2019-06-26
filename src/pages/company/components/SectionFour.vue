@@ -26,7 +26,6 @@
       </form>
     </div>
   </section>
-
 </template>
 
 <script>

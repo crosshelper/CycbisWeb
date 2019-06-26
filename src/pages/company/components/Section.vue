@@ -7,7 +7,6 @@
             <br/>(That is based on your location & language & background.)</p>
         </div>
       </div>
-
     </section>
 </template>
 
