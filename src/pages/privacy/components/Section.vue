@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mb-5">
     <h2>
       Cycbis
       &gt; Privacy Policy</h2>
