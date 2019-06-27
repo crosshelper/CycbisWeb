@@ -6,49 +6,98 @@
           <h6 class="text-left">About us</h6>
           <ul class="p-0">
             <li class="list text-left">
-              <a class="text-dark" href="#">Company</a>
+              <router-link to="/company">
+                <a class="text-dark" href="#">Company</a>
+              </router-link>
             </li>
             <li class="list text-left">
               <router-link to="/career">
                 <a class="text-dark" href="#">Career</a>
               </router-link>
             </li>
-            <li class="list text-left"><a class="text-dark" href="#">Business</a></li>
-            <li class="list text-left"><a class="text-dark" href="#">Investment</a></li>
+            <li class="list text-left">
+              <router-link to="/business">
+                <a class="text-dark" href="#">Business</a>
+              </router-link>
+            </li>
+            <li class="list text-left">
+              <router-link to="/investment">
+                <a class="text-dark" href="#">Investment</a>
+              </router-link>
+            </li>
           </ul>
         </div>
         <div class="col-md-2 col-12 ">
           <h6 class="text-left">Get help</h6>
           <ul class="p-0">
-            <li class=""><a class="text-dark" href="#">Sign up to get help</a></li>
+            <li class="">
+              <router-link to="/learn">
+                <a class="text-dark" href="#">Why Cycbis</a>
+              </router-link>
+            </li>
+            <li class="">
+              <router-link to="/newcomer-signup">
+                <a class="text-dark" href="#">Sign up to get help</a>
+              </router-link>
+            </li>
           </ul>
         </div>
         <div class="col-md-2 col-12">
           <h6 class="text-left">Helper</h6>
           <ul class="p-0">
-            <li class=""><a class="text-dark" href="#">Become helper</a></li>
-            <li class=""><a class="text-dark" href="#">Why Crosshelper</a></li>
+            <li class="">
+              <router-link to="/learn">
+                <a class="text-dark" href="#">Why Cycbis helper</a>
+              </router-link>
+            </li>
+            <li class="">
+              <router-link to="/helper-signup">
+                <a class="text-dark" href="#">Become helper</a>
+              </router-link>
+            </li>
           </ul>
         </div>
         <div class="col-md-2 col-12 ">
           <h6 class="text-left">Support</h6>
           <ul class="p-0">
-            <li class=""><a class="text-dark" href="#">Contact us</a></li>
+            <li class="">
+              <a class="text-dark" href="#">Contact us</a>
+            </li>
+            <li class="">
+              <router-link to="/learn">
+                <a class="text-dark" href="#">Learn</a>
+              </router-link>
+            </li>
+            <li class="">
+              <router-link to="/privacy">
+                <a class="text-dark" href="#">Privacy Policy</a>
+              </router-link>
+            </li>
+            <li class="">
+                <a class="text-dark" href="#">Terms of Service</a>
+            </li>
           </ul>
         </div>
         <div class="col-md-2 col-12">
           <h6 class="text-left">Download App</h6>
           <div class="col-12 text-center">
             <div class="row">
-              <div class=" justify-content-center"><a class="text-dark" href="#"><img class="img-fluid float-right mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/Download_on_the_App_Store.png" alt="" width="100"><p class="mr-3">Apple store</p></a></div>
-              <div class=" justify-content-center"><a class="text-dark" href="#"><img class="img-fluid float-left mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/google_Store_Badge.png" alt="" width="105"><p class="mr-3">Google play</p></a></div>
+              <div class=" justify-content-center"><a class="text-dark" href="https://apps.apple.com/us/app/cycbis/id1466447486">
+                <img class="img-fluid float-right mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/Download_on_the_App_Store.png" alt="" width="100">
+                <p class="mr-3">Apple store</p></a></div>
+              <div class=" justify-content-center"><a class="text-dark" href="#">
+                <img class="img-fluid float-left mr-3" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/download/google_Store_Badge.png" alt="" width="105">
+                <p class="mr-3">Google play</p></a></div>
             </div>
           </div>
         </div>
         <div class="col-md-2 col-12 ">
           <h6 class="text-left">Follow us</h6>
           <ul class="p-0">
-            <li class="text-light" ><a class="text-dark" href="#">Sign up to get help</a></li>
+            <li class="text-light" ><a class="text-dark" href="#">Facebook</a></li>
+            <li class="text-light" ><a class="text-dark" href="#">Instagram</a></li>
+            <li class="text-light" ><a class="text-dark" href="#">Twitter</a></li>
+            <li class="text-light" ><a class="text-dark" href="#">WeChat</a></li>
           </ul>
         </div>
       </div>

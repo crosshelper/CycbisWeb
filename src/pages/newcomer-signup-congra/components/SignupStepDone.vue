@@ -7,7 +7,9 @@
         </router-link>
       </div>
       <div class="col-3 text-right mr-5 mt-2">
-        <el-button type="text">Or become a helper</el-button>
+        <router-link to="/helper-signup">
+          <el-button type="text">Or become a helper</el-button>
+        </router-link>
       </div>
     </div>
     <!-- Section Content -->
@@ -24,7 +26,7 @@
         </div>
         <div class="row my-3 ml-1">
           <p>Or you can click the</p>
-          <router-link class="router-link-active" to="/">
+          <router-link class="router-link-active" to="/learn">
             <a>&nbsp;helping instruction</a>
           </router-link>
           <p>&nbsp;here.</p>

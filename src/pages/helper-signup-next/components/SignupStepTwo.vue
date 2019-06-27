@@ -8,7 +8,7 @@
       </div>
       <div class="col-3 text-right  mr-5 mt-2">
         <router-link to="/newcomer-signup">
-          <el-button type="text">Or become a helper</el-button>
+          <el-button type="text">Newcomer? Click here to get help.</el-button>
         </router-link>
       </div>
     </div>

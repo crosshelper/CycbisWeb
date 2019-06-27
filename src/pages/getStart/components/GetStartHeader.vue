@@ -1,21 +1,36 @@
 <template>
-  <div>
+  <section>
     <b-navbar toggleable="lg" type="light" class="bg-white">
       <div class="ml-sm-5">
         <router-link to="/">
-        <b-img v-bind="mainProps" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisLogo/cb_logo.png" alt="Center image"></b-img>
+          <b-img v-bind="mainProps" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisLogo/cb_logo.png" alt="Center image"></b-img>
         </router-link>
       </div>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#" class="text-primary"><div class="text-dark">Newcomer</div></b-nav-item>
-          <b-nav-item href="#"><div class="text-dark">Helper</div></b-nav-item>
-          <b-nav-item href="#"><div class="text-dark">Company</div></b-nav-item>
-          <b-nav-item href="#"><div class="text-dark">Learn</div></b-nav-item>
-        </b-navbar-nav>
+          <b-nav-item href="#" class="text-primary">
+            <router-link to="/newcomer-intro">
+              <div class="text-dark">Newcomer</div>
+            </router-link>
+          </b-nav-item>
+          <b-nav-item href="#">
+            <router-link to="/helper-intro">
+              <div class="text-dark">Helper</div>
+            </router-link>
+          </b-nav-item>
+          <b-nav-item href="#">
+            <router-link to="/company">
+              <div class="text-dark">Company</div>
+            </router-link>
+          </b-nav-item>
+          <b-nav-item href="#">
+            <router-link to="/learn">
+              <div class="text-dark">Learn</div>
+            </router-link>
+          </b-nav-item>
 
+        </b-navbar-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <router-link to="/getStart">
@@ -25,7 +40,7 @@
       </b-collapse>
     </b-navbar>
     <hr class="simple " color="#DCDFE6" />
-  </div>
+  </section>
 </template>
 
 <script>

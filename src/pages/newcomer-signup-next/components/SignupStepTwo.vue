@@ -7,7 +7,9 @@
           </router-link>
       </div>
       <div class="col-3 text-right  mr-5 mt-2">
-        <el-button type="text">Or become a helper</el-button>
+        <router-link to="/helper-signup">
+          <el-button type="text">Or become a helper</el-button>
+        </router-link>
       </div>
     </div>
 

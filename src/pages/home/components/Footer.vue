@@ -5,7 +5,11 @@
         <div class="col-md-2 col-12 ">
           <h6 class="text-left">Company</h6>
           <ul class="p-0">
-            <li class="list text-left"><a class="text-dark" href="#">About us</a></li>
+            <li class="list text-left">
+              <router-link to="/investment">
+                <a class="text-dark" href="#">About us</a>
+              </router-link>
+            </li>
             <li class="list text-left"><a class="text-dark" href="#">Career</a></li>
             <li class="list text-left"><a class="text-dark" href="#">Business</a></li>
             <li class="list text-left">
