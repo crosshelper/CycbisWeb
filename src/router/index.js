@@ -17,6 +17,7 @@ import Career from '@/pages/career/Career'
 import Business from '@/pages/business/Business'
 import Investment from '@/pages/investment/Investment'
 import Privacy from '@/pages/privacy/Privacy'
+import Terms from '@/pages/terms/Terms'
 
 
 Vue.use(Router)
@@ -106,5 +107,10 @@ export default new Router({
       path: '/privacy',
       name: 'privacy',
       component: Privacy
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      component: Terms
     }]
 })
