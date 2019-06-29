@@ -31,7 +31,7 @@
           <h6 class="text-left">Get help</h6>
           <ul class="p-0">
             <li class="">
-              <router-link to="/learn">
+              <router-link to="/newcomer-intro">
                 <a class="text-dark" href="#">Why Cycbis</a>
               </router-link>
             </li>
@@ -46,7 +46,7 @@
           <h6 class="text-left">Helper</h6>
           <ul class="p-0">
             <li class="">
-              <router-link to="/learn">
+              <router-link to="/helper-intro">
                 <a class="text-dark" href="#">Why Cycbis helper</a>
               </router-link>
             </li>
@@ -96,9 +96,9 @@
         <div class="col-md-2 col-12 ">
           <h6 class="text-left">Follow us</h6>
           <ul class="p-0">
-            <li class="text-light" ><a class="text-dark" href="#">Facebook</a></li>
-            <li class="text-light" ><a class="text-dark" href="#">Instagram</a></li>
-            <li class="text-light" ><a class="text-dark" href="#">Twitter</a></li>
+            <li class="text-light" ><a class="text-dark" href="https://fb.me/cycbis">Facebook</a></li>
+            <li class="text-light" ><a class="text-dark" href="https://www.instagram.com/cycbis/">Instagram</a></li>
+            <li class="text-light" ><a class="text-dark" href="https://twitter.com/cycbis">Twitter</a></li>
             <li class="text-light" ><a class="text-dark" href="#">WeChat</a></li>
           </ul>
         </div>

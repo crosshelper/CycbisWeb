@@ -17,12 +17,14 @@
       </div>
 
       <el-steps :active="5" align-center finish-status="Danger" direction="vertical" class="col-md-6 ml-md-5">
-        <el-step title="Get help" description="这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字"></el-step>
-        <el-step title="Describe your problem" description="这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字">
+        <el-step title="Submit your request" description="Click from different categories to select the service you need, or type the keywords in the search bar to find what service you need."></el-step>
+        <el-step title="Describe your problem" description="Before submitting your request, choose the location and language per your need, then describe what help that you need in the problem description chart, then click next to submitting your request.">
         </el-step>
-        <el-step title="Pick helper" description="这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字">
+        <el-step title="Get connected with local helper" description="After submitting your request, the qualified helper will see your request, and will contact through the chart directly. You can communicate more details to helper to help you better.">
         </el-step>
-        <el-step title="Helping" description="这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字">
+        <el-step title="Confirm the quotation" description="After getting the quotation from help, and you have confirmed it, the helper will offer the help to solve your problems. You make payment.">
+        </el-step>
+        <el-step title="Evaluation" description="After payment, evaluate the service and write feedback optional.">
         </el-step>
         <el-step title="Done"></el-step>
       </el-steps>

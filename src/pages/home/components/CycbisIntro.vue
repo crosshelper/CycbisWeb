@@ -15,7 +15,9 @@
             <div>
               <el-row class="mt-2">
                 <el-col :span="18" :offset="8">
-                  <el-button type="primary" round>Get Start</el-button>
+                  <router-link to="/getStart">
+                    <el-button type="primary" round>Get Start</el-button>
+                  </router-link>
                 </el-col>
               </el-row>
             </div>

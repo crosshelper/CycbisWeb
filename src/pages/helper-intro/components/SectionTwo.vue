@@ -17,12 +17,12 @@
         </div>
 
         <el-steps :active="5" align-center finish-status="Danger" direction="vertical" class="col-md-6 ml-md-5">
-          <el-step title="Pick problem & match newcomer" description="这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字"></el-step>
-          <el-step title="Communicate with the newcomers" description="这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字">
+          <el-step title="Choose the newcomers to offer help" description="At the help page, you can see all the problem list submitted by newcomers who are seeking for help, choose the one that you want to help."></el-step>
+          <el-step title="Chat to know what newcomers need." description="Just click into the chat to communicate with the newcomers and know the details that newcomer needs for help.">
           </el-step>
-          <el-step title="Quote & Comfirm" description="这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字">
+          <el-step title=" Offer the quotation after confirming the help service" description="After knowing the newcomers’ needs, offer the quote to newcomer, after newcomer confirmed and accept the quotation, then provide service to newcomers and get paid by newcomers.">
           </el-step>
-          <el-step title="Helping" description="这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字这是一段很长很长很长的描述性文字">
+          <el-step title="Evaluation after post-collection" description="After receiving the payment, users will write the feedback for the service and suggestions as well.">
           </el-step>
           <el-step title="Done"></el-step>
         </el-steps>

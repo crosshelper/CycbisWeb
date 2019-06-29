@@ -7,13 +7,13 @@
     <div class="container text-center">
     </div>
     <div class="row mx-5 justify-content-center">
-      <router-link to="/helper-intro" class="col-md-3 text-center py-md-3 mt-2">
+      <router-link to="/business" class="col-md-3 text-center py-md-3 mt-2">
         <el-button style="width: 100%" round>Business & Partner</el-button>
       </router-link>
-      <router-link to="/helper-intro" class="col-md-3 text-center py-md-3 mt-2">
+      <router-link to="/career" class="col-md-3 text-center py-md-3 mt-2">
         <el-button round style="width: 100%">Joining us</el-button>
       </router-link>
-      <router-link to="/helper-intro" class="col-md-3 text-center py-md-3 mb-3 mt-2">
+      <router-link to="/investment" class="col-md-3 text-center py-md-3 mb-3 mt-2">
         <el-button style="width: 100%" round>Invest us</el-button>
       </router-link>
     </div>

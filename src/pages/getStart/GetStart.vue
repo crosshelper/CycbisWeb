@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import GetStartHeader from './components/GetStartHeader'
-import GetStartFooter from './components/GetStartFooter'
-import GetStartSignUp from './components/GetStartSignUp'
+import GetStartHeader from './components/Header'
+import GetStartFooter from './components/Footer'
+import GetStartSignUp from './components/SignUp'
 
 export default {
   name: "get-start",

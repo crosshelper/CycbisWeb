@@ -7,7 +7,7 @@
             <h1 class="">Earn money up tp $1400 each week. Become a helper to help newcomers.</h1>
             <div class="row mt-4">
               <div class="col-3">
-                <router-link to="/newcomer-signup">
+                <router-link to="/helper-signup">
                   <el-button type="primary" round>Sign up as a Helper</el-button>
                 </router-link>
               </div>
