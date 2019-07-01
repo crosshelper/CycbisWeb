@@ -7,7 +7,7 @@
       <el-card class="col-lg-2 mx-4 my-1">
         <div class="text-center">
           <div class="mb-3">
-            <i class="el-icon-s-data"></i>
+            <i class="el-icon-guide"></i>
           </div>
           <h5>Travelers</h5>
           <p class="">
@@ -18,7 +18,7 @@
       <el-card class="col-lg-2 mx-4 my-1">
         <div class="text-center">
           <div class="mb-3">
-            <i class="el-icon-position"></i>
+            <i class="el-icon-house"></i>
           </div>
           <h5>Residents</h5>
           <p class="">
@@ -29,7 +29,7 @@
       <el-card class="col-lg-2 mx-4 my-1">
         <div class="text-center">
           <div class="mb-3">
-            <i class="el-icon-chat-line-square"></i>
+            <i class="el-icon-place"></i>
           </div>
           <h5>Immigrants</h5>
           <p class="">
@@ -40,7 +40,7 @@
       <el-card class="col-lg-2 mx-4 my-1">
         <div class="text-center">
           <div class="mb-3">
-            <i class="el-icon-finished"></i>
+            <i class="el-icon-notebook-2"></i>
           </div>
           <h5>International student</h5>
           <p class="">
