@@ -1,24 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/pages/home/Home'
-import GetStart from '@/pages/getStart/GetStart'
-import NewcomerSignup from '@/pages/newcomer-signup/NewcomerSignup'
-import NewcomerSignupStepTwo from '@/pages/newcomer-signup-next/NewcomerSignupNext'
-import NewcomerSignupCongra from '@/pages/newcomer-signup-congra/NewcomerSignupCongra'
-import HelperSignup from '@/pages/helper-signup/HelperSignup'
-import HelperSignupStepTwo from '@/pages/helper-signup-next/HelperSignupNext'
-import HelperSignupStepThree from '@/pages/helper-signup-verify/HelperSignupVerify'
-import HelperSignupCongra from '@/pages/helper-signup-congra/HelperSignupCongra'
-import NewcomerIntro from '@/pages/newcomer-intro/NewcomerIntro'
-import HelperIntro from '@/pages/helper-intro/HelperIntro'
-import Learn from '@/pages/learn/Learn'
-import Company from '@/pages/company/Company'
-import Career from '@/pages/career/Career'
-import Business from '@/pages/business/Business'
-import Investment from '@/pages/investment/Investment'
-import Privacy from '@/pages/privacy/Privacy'
-import Terms from '@/pages/terms/Terms'
-
 
 Vue.use(Router)
 
@@ -26,91 +7,91 @@ export default new Router({
   routes: [{
       path: '/',
       name: 'Home',
-      component: Home
+      component: () => import('@/pages/home/Home')
     },
     {
       path: '/getStart',
       name: 'get-start',
-      component: GetStart
+      component: () => import('@/pages/getStart/GetStart')
     },
     {
       path: '/newcomer-signup',
       name: 'newcomer-signup',
-      component: NewcomerSignup
+      component: () => import('@/pages/newcomer-signup/NewcomerSignup')
     },
     {
       path: '/newcomer-signup-next',
       name: 'newcomer-signup-next',
-      component: NewcomerSignupStepTwo
+      component: () => import('@/pages/newcomer-signup-next/NewcomerSignupNext')
     },
     {
       path: '/newcomer-signup-congra',
       name: 'newcomer-signup-congra',
-      component: NewcomerSignupCongra
+      component: () => import('@/pages/newcomer-signup-congra/NewcomerSignupCongra')
     },
     {
       path: '/helper-signup',
       name: 'helper-signup',
-      component: HelperSignup
+      component: () => import('@/pages/helper-signup/HelperSignup')
     },
     {
       path: '/helper-signup-next',
       name: 'helper-signup-next',
-      component: HelperSignupStepTwo
+      component: () => import('@/pages/helper-signup-next/HelperSignupNext')
     },
     {
       path: '/helper-signup-verify',
       name: 'helper-signup-verify',
-      component: HelperSignupStepThree
+      component: () => import('@/pages/helper-signup-verify/HelperSignupVerify')
     },
     {
       path: '/helper-signup-congra',
       name: 'helper-signup-congra',
-      component: HelperSignupCongra
+      component: () => import('@/pages/helper-signup-congra/HelperSignupCongra')
     },
     {
       path: '/newcomer-intro',
       name: 'newcomer-intro',
-      component: NewcomerIntro
+      component: () => import('@/pages/newcomer-intro/NewcomerIntro')
     },
     {
       path: '/helper-intro',
       name: 'helper-intro',
-      component: HelperIntro
+      component: () => import('@/pages/helper-intro/HelperIntro')
     },
     {
       path: '/learn',
       name: 'learn',
-      component: Learn
+      component: () => import('@/pages/learn/Learn')
     },
     {
       path: '/company',
       name: 'company',
-      component: Company
+      component: () => import('@/pages/company/Company')
     },
     {
       path: '/career',
       name: 'career',
-      component: Career
+      component: () => import('@/pages/career/Career')
     },
     {
       path: '/business',
       name: 'business',
-      component: Business
+      component: () => import('@/pages/business/Business')
     },
     {
       path: '/investment',
       name: 'investment',
-      component: Investment
+      component: () => import('@/pages/investment/Investment')
     },
     {
       path: '/privacy',
       name: 'privacy',
-      component: Privacy
+      component: () => import('@/pages/privacy/Privacy')
     },
     {
       path: '/terms',
       name: 'terms',
-      component: Terms
+      component: () => import('@/pages/terms/Terms')
     }]
 })

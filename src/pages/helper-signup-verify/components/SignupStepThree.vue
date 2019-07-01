@@ -53,8 +53,8 @@
     </section>
   </template>
 
-  <script>
-    import ElButton from "element-ui/packages/button/src/button";
+<script>
+import ElButton from "element-ui/packages/button/src/button";
       export default {
           name: "signup-step-three",
         components: {ElButton},
