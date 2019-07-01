@@ -9,10 +9,9 @@
           <div class="mb-3">
             <i class="el-icon-s-data"></i>
           </div>
-          <h5>Co-founder & CTO</h5>
+          <h5>Travelers</h5>
           <p class="">
-            10 + years software engineering working experience<br>
-            San Jose State University, Master of Computer Science<br>
+            Travelers get problems during the travel<br>
           </p>
         </div>
       </el-card>
@@ -21,10 +20,9 @@
           <div class="mb-3">
             <i class="el-icon-position"></i>
           </div>
-          <h5>Co-founder & CTO</h5>
+          <h5>Residents</h5>
           <p class="">
-            10 + years software engineering working experience<br>
-            San Jose State University, Master of Computer Science<br>
+            New residents get problems after moving to a new city/state.<br>
           </p>
         </div>
       </el-card>
@@ -33,10 +31,9 @@
           <div class="mb-3">
             <i class="el-icon-chat-line-square"></i>
           </div>
-          <h5>Co-founder & CTO</h5>
+          <h5>Immigrants</h5>
           <p class="">
-            10 + years software engineering working experience<br>
-            San Jose State University, Master of Computer Science<br>
+            New immigrants get problems after coming to a new country.<br>
           </p>
         </div>
       </el-card>
@@ -45,13 +42,15 @@
           <div class="mb-3">
             <i class="el-icon-finished"></i>
           </div>
-          <h5>Co-founder & CTO</h5>
+          <h5>International student</h5>
           <p class="">
-            10 + years software engineering working experience<br>
-            San Jose State University, Master of Computer Science<br>
+            Student get problems after abroad study<br>
           </p>
         </div>
       </el-card>
+    </div>
+    <div class="text-center my-5">
+      <h4>Crosshelper can get them helped on these post-arrival problems.</h4>
     </div>
   </section>
 </template>
@@ -68,6 +67,9 @@
 
 <style scoped>
   h2{
+    color: #555555;
+  }
+  h4{
     color: #555555;
   }
 h5{

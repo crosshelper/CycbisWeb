@@ -45,16 +45,16 @@
           active: 0,
           imageList:[
             {
-              url:"http://www.cycbis.com/CH/app/assets/img-temp/mockups/mockup4.png"
+              url:"https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/newcomer1.png"
             },
             {
-              url:"http://www.cycbis.com/CH/app/assets/img-temp/mockups/mockup5.png"
+              url:"https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/newcomer2.png"
             },
             {
-              url:"http://www.cycbis.com/CH/app/assets/img-temp/mockups/mockup6.png"
+              url:"https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/newcomer3.png"
             },
             {
-              url:"http://www.cycbis.com/CH/app/assets/img-temp/mockups/mockup7.png"
+              url:"https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/newcomer4.png"
             },
           ],
         };
