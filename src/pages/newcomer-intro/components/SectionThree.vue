@@ -15,7 +15,7 @@
           <!-- Article -->
           <article class="u-block-hover">
             <figure class="g-overflow-hidden">
-              <img class="img-fluid u-block-hover__main--zoom-v1" src="http://www.cycbis.com/CH/app/assets/img-temp/800x466/img1.jpg" alt="Image description">
+              <img class="img-fluid u-block-hover__main--zoom-v1" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/Feedback1.jpg" alt="Image description">
             </figure>
 
             <div class="g-color-white g-pa-40-30-30">
@@ -30,7 +30,7 @@
           <!-- Article -->
           <article class="u-block-hover">
             <figure class="g-overflow-hidden">
-              <img class="img-fluid u-block-hover__main--zoom-v1" src="http://www.cycbis.com/CH/app/assets/img-temp/800x466/img2.jpg" alt="Image description">
+              <img class="img-fluid u-block-hover__main--zoom-v1" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/Feedback2.jpg" alt="Image description">
             </figure>
 
             <div class="g-color-white g-pa-40-30-30">
@@ -45,7 +45,7 @@
           <!-- Article -->
           <article class="u-block-hover">
             <figure class="g-overflow-hidden">
-              <img class="img-fluid u-block-hover__main--zoom-v1" src="http://www.cycbis.com/CH/app/assets/img-temp/800x466/img3.jpg" alt="Image description">
+              <img class="img-fluid u-block-hover__main--zoom-v1" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/Feedback3.jpg" alt="Image description">
             </figure>
 
             <div class="g-color-white g-pa-40-30-30">
@@ -60,7 +60,7 @@
           <!-- Article -->
           <article class="u-block-hover">
             <figure class="g-overflow-hidden">
-              <img class="img-fluid u-block-hover__main--zoom-v1" src="http://www.cycbis.com/CH/app/assets/img-temp/800x466/img4.jpg" alt="Image description">
+              <img class="img-fluid u-block-hover__main--zoom-v1" src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/Feedback4.jpg" alt="Image description">
             </figure>
 
             <div class="g-color-white g-pa-40-30-30">

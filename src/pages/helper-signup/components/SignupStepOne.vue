@@ -23,17 +23,21 @@
             </div>
             <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm">
               <div>
-                <div class="text-center pb-1">
-                  <el-button size="mini" style="width: 100%">
-                    <img src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/google-480.png" width="30" height="30">
-                    <span class="pl-2 text-secondary" style="font-size: small">Continue with Google</span>
-                  </el-button>
+                <div class="text-center pb-2">
+                  <el-tooltip class="item" effect="dark" content="Sorry, Currently unavailable" placement="top">
+                    <el-button size="mini" style="width: 100%">
+                      <img src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/google-480.png" width="30" height="30">
+                      <span class="pl-2 text-secondary" style="font-size: small">Continue with Google</span>
+                    </el-button>
+                  </el-tooltip>
                 </div>
-                <div class="text-center pb-1">
-                  <el-button size="mini" style="width: 100%">
-                    <img src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/facebook-old-480.png" width="30" height="28">
-                    <span class="pl-2 text-secondary" style="font-size: small">Continue with Facebook</span>
-                  </el-button>
+                <div class="text-center pb-2">
+                  <el-tooltip class="item" effect="dark" content="Sorry, Currently unavailable" placement="top">
+                    <el-button size="mini" style="width: 100%">
+                      <img src="https://s3-us-west-1.amazonaws.com/image.cycbis.com/CycbisWeb/facebook-old-480.png" width="30" height="28">
+                      <span class="pl-2 text-secondary" style="font-size: small">Continue with Facebook</span>
+                    </el-button>
+                  </el-tooltip>
                 </div>
               </div>
               <div class="row px-4">
