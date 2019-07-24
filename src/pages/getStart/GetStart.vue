@@ -1,26 +1,25 @@
 <template>
-  <div>
+  <div class="bg-color">
     <get-start-header></get-start-header>
     <get-start-sign-up></get-start-sign-up>
-    <get-start-footer></get-start-footer>
   </div>
 </template>
 
 <script>
-import GetStartHeader from './components/Header'
-import GetStartFooter from './components/Footer'
 import GetStartSignUp from './components/SignUp'
+import GetStartHeader from './components/Header'
 
 export default {
   name: "get-start",
   components: {
-    GetStartHeader,
-    GetStartFooter,
-    GetStartSignUp
+    GetStartSignUp,
+    GetStartHeader
   }
 }
 </script>
 
 <style scoped>
-
+.bg-color{
+  background-color: #EBEBEB;
+}
 </style>

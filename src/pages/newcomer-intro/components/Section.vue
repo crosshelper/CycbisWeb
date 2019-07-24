@@ -7,12 +7,12 @@
             <h1 class="">Find lovable local helper solve your problem.</h1>
             <div class="row mt-4">
               <div class="col-3">
-                <router-link to="/newcomer-signup">
+                <router-link to="/getStart">
                   <el-button type="primary" round>Get Help</el-button>
                 </router-link>
               </div>
               <div class="col-8 mt-2">
-                <p class="text-left">Click to Sign up and download the App.</p>
+
               </div>
             </div>
           </div>
