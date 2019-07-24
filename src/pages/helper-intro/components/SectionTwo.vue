@@ -17,10 +17,10 @@
         </div>
 
         <el-steps :active="5" align-center finish-status="Danger" direction="vertical" class="col-md-6 ml-md-5">
-          <el-step title="Choose the newcomers to offer help" description="At the help page, you can see all the problem list submitted by newcomers who are seeking for help, choose the one that you want to help."></el-step>
-          <el-step title="Chat to know what newcomers need." description="Just click into the chat to communicate with the newcomers and know the details that newcomer needs for help.">
+          <el-step title="Choose the traveler to offer help" description="At the help page, you can see all the problem list submitted by travelers who are seeking for help, choose the one that you want to help."></el-step>
+          <el-step title="Chat to know what travelers need." description="Just click into the chat to communicate with the travelers and know the details that newcomer needs for help.">
           </el-step>
-          <el-step title=" Offer the quotation after confirming the help service" description="After knowing the newcomers’ needs, offer the quote to newcomer, after newcomer confirmed and accept the quotation, then provide service to newcomers and get paid by newcomers.">
+          <el-step title=" Offer the quotation after confirming the help service" description="After knowing the travelers’ needs, offer the quote to traveler, after traveler confirmed and accept the quotation, then provide service to travelers and get paid by travelers.">
           </el-step>
           <el-step title="Evaluation after post-collection" description="After receiving the payment, users will write the feedback for the service and suggestions as well.">
           </el-step>

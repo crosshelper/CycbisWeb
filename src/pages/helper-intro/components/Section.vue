@@ -4,7 +4,7 @@
       <div class="row mb-4" id="signup">
         <div class="col-lg mt-5" id="right">
           <div class="col-12">
-            <h1 class="">Earn money up tp $1400 each week. Become a helper to help newcomers.</h1>
+            <h1 class="">Earn money up tp $1400 each week. Become a helper to help traveler.</h1>
             <div class="row mt-4">
               <div class="col-3">
                 <router-link to="/getStart">

@@ -5,7 +5,7 @@
         <h2 class="">Users feedback</h2>
       </div>
       <h6>We already had customer and helped them solve problems, before we start this.<br>
-        That is why we want to build a platform to contact newcomers and residents.
+        That is why we want to build a platform to contact travelers and residents.
       </h6>
     </div>
 

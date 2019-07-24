@@ -35,11 +35,6 @@
                 <a class="text-dark" href="#">Why Cycbis</a>
               </router-link>
             </li>
-            <li class="">
-              <router-link to="/newcomer-signup">
-                <a class="text-dark" href="#">Sign up to get help</a>
-              </router-link>
-            </li>
           </ul>
         </div>
         <div class="col-md-2 col-12">
@@ -48,11 +43,6 @@
             <li class="">
               <router-link to="/helper-intro">
                 <a class="text-dark" href="#">Why Cycbis helper</a>
-              </router-link>
-            </li>
-            <li class="">
-              <router-link to="/helper-signup">
-                <a class="text-dark" href="#">Become helper</a>
               </router-link>
             </li>
           </ul>

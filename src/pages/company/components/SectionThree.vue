@@ -50,7 +50,7 @@
       </el-card>
     </div>
     <div class="text-center my-5">
-      <h4>Crosshelper can get them helped on these post-arrival problems.</h4>
+      <h4>Cycbis can get them helped on these post-arrival problems.</h4>
     </div>
   </section>
 </template>

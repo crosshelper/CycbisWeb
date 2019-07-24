@@ -5,9 +5,9 @@
         <div class="col-md-6 col-lg-5 offset-lg-1 d-flex text-center text-md-left">
           <div class="align-self-center">
             <h1 >
-              <br>Cycbis is a platform that connects local residents and newcomers to offer instant help.</h1>
+              <br>Cycbis is a platform that connects local residents and travelers to offer instant help.</h1>
             <el-divider></el-divider>
-            <p class="g-mb-20 ">All newcomers are facing various kinds of problems when they first come to a new country, especially during the first 1-2 years.
+            <p class="g-mb-20 ">All traveler are facing various kinds of problems when they first come to a new country, especially during the first 1-2 years.
               <br>
                 We help you find the nearest right person to solve your problem immediately.
               <br>(That is based on your location & language & background.)
