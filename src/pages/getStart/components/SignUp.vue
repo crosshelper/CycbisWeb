@@ -59,7 +59,7 @@
       </div>
 
       <div class="text-center pt-5">
-        <router-link to="/">
+        <router-link to="/#">
           <el-button type="primary" round>Back to home</el-button>
         </router-link>
       </div>

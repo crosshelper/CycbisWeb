@@ -16,7 +16,7 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item href="#" class="text-primary">
             <router-link to="/newcomer-intro">
-              <div class="text-dark">Newcomer</div>
+              <div class="text-dark">Traveler</div>
             </router-link>
           </b-nav-item>
           <b-nav-item href="#">
@@ -34,10 +34,18 @@
               <div class="text-dark">Learn</div>
             </router-link>
           </b-nav-item>
-
-          <router-link to="/getStart">
-            <el-button type="primary" class="mr-sm-5 mx-lg-4" round>Download</el-button>
-          </router-link>
+          <b-nav-item-dropdown text="English"  right>
+            <b-dropdown-item href="#">
+              <router-link to="/">
+                <div>English</div>
+              </router-link>
+            </b-dropdown-item>
+            <b-dropdown-item href="#">
+              <router-link to="/ch">
+                <div>Chinese</div>
+              </router-link>
+            </b-dropdown-item>
+          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -60,5 +68,8 @@
   .simple{
     position: relative;
     bottom: 15px;
+  }
+  b-nav-item-dropdown{
+    color: #1b1e21;
   }
 </style>

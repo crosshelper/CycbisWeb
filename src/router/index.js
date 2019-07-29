@@ -93,5 +93,10 @@ export default new Router({
       path: '/terms',
       name: 'terms',
       component: () => import('@/pages/terms/Terms')
+    },
+    {
+      path: '/ch',
+      name: 'ch',
+      component: () => import('@/pages/ch/Home')
     }]
 })
