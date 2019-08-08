@@ -35,8 +35,16 @@
             </router-link>
           </b-nav-item>
           <b-nav-item-dropdown text="English"  right>
-            <b-dropdown-item href="#">English</b-dropdown-item>
-            <b-dropdown-item href="#">Chinese</b-dropdown-item>
+            <b-dropdown-item href="#">
+              <router-link to="/">
+                <div>English</div>
+              </router-link>
+            </b-dropdown-item>
+            <b-dropdown-item href="#">
+              <router-link to="/ch">
+                <div>Chinese</div>
+              </router-link>
+            </b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
